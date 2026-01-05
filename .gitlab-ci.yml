@@ -11,7 +11,9 @@ build-and-push:
     DOCKER_TLS_CERTDIR: "/certs"
   before_script:
     - echo "Logging in to Docker Hub..."
-    - echo "$DOCKERHUB_TOKEN" | docker login --username "$DOCKERHUB_USERNAME" --password-stdin
+    - echo "Username is ${DOCKERHUB_USERNAME}"
+    - echo "Token length is ${#DOCKERHUB_TOKEN}"
+    - docker login --username "${DOCKERHUB_USERNAME}" --password "${DOCKERHUB_TOKEN}"
   script:
     - |
       if [ -n "$CI_COMMIT_TAG" ]; then
