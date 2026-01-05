@@ -15,6 +15,7 @@ Karena GitLab shared runner ga cukup disk space (14GB limit), kita build di RunP
 1. ✅ RunPod account (https://runpod.io)
 2. ✅ Docker Hub account (https://hub.docker.com)
 3. ✅ GitHub repo with your code (https://github.com/mariorinawan12/runpod-ingest)
+4. ✅ Docker Hub username: **mariorinawan** (not mariorinawan12!)
 
 ---
 
@@ -104,7 +105,7 @@ The script will:
 
 🔐 Step 2: Login to Docker Hub
 Enter your Docker Hub credentials:
-Username: mariorinawan12
+Username: mariorinawan
 Password: [enter your Docker Hub token]
 ✅ Login Succeeded!
 
@@ -121,14 +122,14 @@ This will take 10-15 minutes...
 ✅ Push complete!
 
 🎉 SUCCESS!
-Image pushed: mariorinawan12/runpod-ingest:latest
+Image pushed: mariorinawan/runpod-ingest:latest
 ```
 
 ---
 
 ### STEP 5: Verify on Docker Hub
 
-1. Go to https://hub.docker.com/r/mariorinawan12/runpod-ingest
+1. Go to https://hub.docker.com/r/mariorinawan/runpod-ingest
 2. Check that **"latest"** tag exists
 3. Check the size (~13GB)
 
@@ -158,8 +159,8 @@ When you update your code and want to rebuild:
 # 3. Run:
 cd runpod-ingest
 git pull origin main
-docker build -t mariorinawan12/runpod-ingest:latest .
-docker push mariorinawan12/runpod-ingest:latest
+docker build -t mariorinawan/runpod-ingest:latest .
+docker push mariorinawan/runpod-ingest:latest
 ```
 
 ### Option B: Use Script Again
@@ -256,7 +257,7 @@ Your Docker image is now on Docker Hub and ready to deploy to RunPod Serverless!
 
 Next: Go to RunPod Serverless console and create/update your endpoint with:
 ```
-mariorinawan12/runpod-ingest:latest
+mariorinawan/runpod-ingest:latest
 ```
 
 ---
@@ -264,5 +265,5 @@ mariorinawan12/runpod-ingest:latest
 ## 📞 Need Help?
 
 - RunPod Discord: https://discord.gg/runpod
-- Docker Hub: https://hub.docker.com
+- Docker Hub: https://hub.docker.com/r/mariorinawan/runpod-ingest
 - GitHub Issues: https://github.com/mariorinawan12/runpod-ingest/issues

@@ -23,7 +23,7 @@ echo ""
 # CONFIGURATION - EDIT THESE!
 # ============================================================================
 GITHUB_REPO="https://github.com/mariorinawan12/runpod-ingest.git"
-DOCKERHUB_USERNAME="mariorinawan12"
+DOCKERHUB_USERNAME="mariorinawan"
 IMAGE_NAME="runpod-ingest"
 BRANCH="main"  # or "master" depending on your repo
 
