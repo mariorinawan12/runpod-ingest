@@ -1,0 +1,13 @@
+# RUNPOD-INGEST: PyTorch CUDA Worker
+# ====================================
+
+# RunPod SDK
+runpod>=1.6.0
+
+# Embedding model
+sentence-transformers>=2.2.0
+torch>=2.0.0
+transformers>=4.36.0
+
+# Numpy
+numpy>=1.24.0
