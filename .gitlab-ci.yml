@@ -29,5 +29,3 @@ build-and-push:
       fi
   only:
     - tags
-  tags:
-    - saas-linux-large-amd64
